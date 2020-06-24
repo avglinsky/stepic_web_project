@@ -3,6 +3,8 @@ git clone https://github.com/avglinsky/stepic_web_project.git /home/box
 git pull
 bash init.sh
 gunicorn -b 0.0.0.0:8080 -w 3 hello:app &
+если хотите перезапустить gunicorn: sudo ps aux ﻿| grep gunicorn, ﻿и стопаете первый по порядку процесс, например: ﻿kill 33, где 33 - pid процесса﻿
+sudo service gunicorn restart
 
 sudo apt-get update
 sudo apt-get install mc
