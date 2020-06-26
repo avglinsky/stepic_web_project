@@ -1,6 +1,7 @@
 ﻿rm -f .bash* .profile
 git clone https://github.com/avglinsky/stepic_web_project.git /home/box/web
 git pull
+cd /home/box/web
 bash init.sh
 gunicorn -b 0.0.0.0:8080 -w 3 hello:app &
 sudo service gunicorn restart
