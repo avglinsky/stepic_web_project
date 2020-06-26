@@ -17,10 +17,10 @@ Python 2, на наш новый. Для этого необходимо отр�
 
 
 ```
-/usr/sbin/gunicorn-debian
-/usr/bin/gunicorn
-/usr/bin/gunicorn_django
-/usr/bin/gunicorn_paster
+sudo nano /usr/sbin/gunicorn-debian
+sudo nano /usr/bin/gunicorn
+sudo nano /usr/bin/gunicorn_django
+sudo nano /usr/bin/gunicorn_paster
 ```
 
 В первом файле достаточно лишь заменить `python` на `python3` в конце
